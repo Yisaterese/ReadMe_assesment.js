@@ -1,14 +1,7 @@
 "Assesment"
-//const myClassArray = ["9:00 AM", "11:00 AM","1:00 PM","3:00 PM","5:00 PM"]
-
-//const testScores = [56,34,78,98,67,45,70,80,74,45]
-
-
-function classTestScores(testScores ){
-  let newArray = []
-  testScores.filter(n => {if(n >= 70)return newArray.push(n)})
+function classTestScores(testScores){
+  return testScores.filter(n => n >= 70)
 }
-console.log(classTestScores([56,34,78,98,67,45,70,80,74,45]))
 
 function addScores(studentScores){
  return  studentScores.map(n => n + 5)
@@ -22,6 +15,12 @@ function myClasses(classes){
   return classes.filter(time => time.endsWith("PM"))
 }
 
-console.log(addScores([56,34,78,98,67,45,70,80,74,45]))
-
+function expenses(object){
+  for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+      const element = object[key];
+      
+    }
+  }
+}
 module.exports = {classTestScores,addScores,squareScores,myClasses}
