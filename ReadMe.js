@@ -33,9 +33,9 @@ let books = [book1,book2,book3]
 let members = [Emily,Jack,Sophia]
 
 function bookDistribution(books,members){
-  for (const iterator of books) {
+  for (const value of books) {
     for (const key of members) {
-      members[key] = books[iterator] 
+      members[key] = books[value] 
       }
   }
   return members
