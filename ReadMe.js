@@ -40,5 +40,16 @@ function bookDistribution(books,members){
   }
   return members
 }
+
+
+function filterUnhealthyItems(mylist){
+  let healthyShoppingList = []
+  mylist.forEach(function (index){
+    if(index.isHealthy == true){healthyShoppingList.push(index)}
+
+})
+return healthyShoppingList
+
+}
 console.log(bookDistribution(books,members))
-module.exports = {classTestScores,addScores,squareScores,myClasses,expenses,bookDistribution}
+module.exports = {classTestScores,addScores,squareScores,myClasses,expenses,bookDistribution,filterUnhealthyItems}
